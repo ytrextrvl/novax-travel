@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Search, MapPin, Calendar, Users, ArrowRight, ShieldCheck, Globe, Clock } from 'lucide-react'
+import DownloadApkButton from '@/components/DownloadApkButton'
 
 export default function Home() {
   return (
@@ -13,9 +14,13 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">
             Discover the World with <span className="text-blue-400">NOVAX</span>
           </h1>
-          <p className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-slate-300 mb-6 max-w-2xl mx-auto">
             Seamless travel experiences from Yemen to the globe. Book flights, hotels, and visas in one place.
           </p>
+          
+          <div className="mb-10">
+            <DownloadApkButton />
+          </div>
           
           {/* Search Box */}
           <div className="bg-white p-4 rounded-2xl shadow-xl max-w-4xl mx-auto">

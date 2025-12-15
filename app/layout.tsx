@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link'
 import { Plane, Menu, X, User, Phone } from 'lucide-react'
 import CustomerAIChat from '@/components/CustomerAIChat'
+import DownloadApkButton from '@/components/DownloadApkButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,10 +26,7 @@ export default function RootLayout({
             <div className="flex justify-between h-16">
               <div className="flex items-center">
                 <Link href="/" className="flex items-center gap-2">
-                  <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
-                    N
-                  </div>
-                  <span className="font-bold text-xl tracking-tight text-slate-900">NOVAX</span>
+                  <img src="/images/logo-light.png" alt="NOVAX Logo" className="h-10 w-auto object-contain" />
                 </Link>
                 <div className="hidden md:flex ml-10 space-x-8">
                   <Link href="/flights" className="text-slate-600 hover:text-blue-600 font-medium transition-colors">Flights</Link>
@@ -60,12 +58,14 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-white">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold">N</div>
-                <span className="font-bold text-xl">NOVAX</span>
+                <img src="/images/logo-dark.png" alt="NOVAX Logo" className="h-10 w-auto object-contain brightness-0 invert" />
               </div>
               <p className="text-sm text-slate-400">
                 Your trusted partner for travel in Yemen and beyond. Flights, hotels, and visas made simple.
               </p>
+              <div className="pt-4">
+                <DownloadApkButton className="text-sm py-2 px-4" />
+              </div>
             </div>
             <div>
               <h3 className="font-bold text-white mb-4">Services</h3>
