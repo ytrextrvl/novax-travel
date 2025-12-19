@@ -1,0 +1,10 @@
+# NOVAX Travel - Code Owners
+
+# CI/CD and security
+.github/ @ytrextrvl
+
+# Environment
+.env.example @ytrextrvl
+
+# Configuration
+next.config.js @ytrextrvl
