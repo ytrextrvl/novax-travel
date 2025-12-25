@@ -21,6 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} bg-slate-50 text-slate-900`}>
+      {/* NOVAX_BRAND_HEADER */}
+      <header style={{position:"sticky",top:0,zIndex:50,background:"#ffffff",borderBottom:"1px solid rgba(0,0,0,.08)"}}>
+        <div style={{maxWidth:1200,margin:"0 auto",padding:"12px 16px",display:"flex",alignItems:"center",gap:12}}>
+          <a href="/" style={{display:"inline-flex",alignItems:"center",gap:10,textDecoration:"none"}}>
+            <img src="/brand/svg/novax_logo_primary_dark.svg" alt="NOVAX" style={{height:28,width:"auto"}}
+              onError={(e)=>{e.currentTarget.onerror=null; e.currentTarget.src="/brand/svg/novax_logo_primary.svg";}} />
+          </a>
+        </div>
+      </header>
+
         <nav className="bg-white border-b border-slate-200 sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between h-16">
